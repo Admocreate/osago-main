@@ -1,0 +1,50 @@
+@mixin do-font-face($name, $file-name, $url, $type, $weight, $style){
+  @font-face {
+    font-family: $name;
+    //src: url(#{$url + $file-name}.eot);
+    //src: url(#{$url + $file-name}.eot?#iefix) format('embedded-opentype');
+    @if $type == "otf"{
+      src: url(#{$url + $file-name}.otfi) format('opentype');
+    }
+    @if $type == "ttf"{
+      src: url(#{$url + $file-name}.ttf) format('truetype');
+    }
+    @if $type == "woff"{
+      src: url(#{$url + $file-name}.woff);
+    }
+    @if $type == "woff2"{
+      src: url(#{$url + $file-name}.woff2);
+    }
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include do-font-face('Manrope', 'manrope-regular', '../fonts/', 'ttf', normal, normal);
+@include do-font-face('Manrope', 'manrope-medium', '../fonts/', 'ttf', bold, normal);
+@include do-font-face('Manrope', 'manrope-bold', '../fonts/', 'ttf', bold, normal);
+@include do-font-face('Qumpellka', 'qumpellka', '../fonts/', 'otf', normal, normal);
+
+$manrope          : 'Manrope', sans-serif;
+// $qumpellka      : 'Qumpellka', cursive;
+
+$ffh : $manrope;
+$ffb : $manrope;
+
+$light          : 300;
+$normal         : normal;
+$semibold       : 500;
+$bold           : bold;
+$black-weight   : 900;
+
+
+// Colors
+$main-green: #00DB94;
+$main-yellow: #FFE88C;
+
+$dark-green: #004752;
+$lite-green: #DEFEF2;
+
+$white: #ffffff;
+$dark-grey: #333333;
+$light-grey: #FAFAFA

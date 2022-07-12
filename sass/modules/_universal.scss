@@ -1,0 +1,119 @@
+.heading2{
+    // color: $dark-green;
+}
+.text-link{
+    color: #212529 !important;
+    font-weight: $normal !important;
+    font-size: 16px !important;
+    &:hover{
+        color: $main-green !important;
+    }
+}
+.table-dark-green{
+    background: $dark-green;
+    color: #ffffff;
+}
+th{
+    font-weight: $bold;
+    font-size: 16px;
+    @media only screen and (max-width: $tablet_width) {
+        font-size: 14.5px;    
+    }
+}
+td{
+    font-size: 16px;
+    @media only screen and (max-width: $tablet_width) {
+        font-size: 14.5px;  
+    }
+    
+}
+.tb-d{
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    padding: 4px 4px 5px 4px;
+}
+.table{
+    .pdd-r{
+        padding-right: 13rem !important;
+        @media only screen and (max-width: $desktop_width) {
+            padding-right: 3rem !important;  
+        }
+        @media only screen and (max-width: $tablet_width) {
+            padding-right: 0 !important;  
+        }
+    }
+    .c-pdd{
+        @media only screen and (max-width: $tablet_width) {
+            padding-right: 8rem !important;
+            
+        }
+        // @media only screen and (max-width: $mobile_width) {
+        //     padding-right: 8rem !important;
+            
+        // }
+    } 
+    .green{
+        background-color: #defef246;
+    }
+    .break{
+        display: inline;
+        @media only screen and (max-width: $tablet_width) {
+            display: block;  
+        }
+    }
+}
+
+.desktop-head{
+    @media only screen and (min-width: $tablet_width) {
+        display: block;
+    }
+    @media only screen and (max-width: $tablet_width) {
+        display: none !important;
+    }
+}
+.mobile-head{
+    @media only screen and (min-width: $tablet_width) {
+        display: none;
+    }
+    @media only screen and (max-width: $tablet_width) {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+.Horizontalsc{
+    overflow-x: auto;
+}
+.ord-nu{
+    @media only screen and (max-width: $tablet_width) {
+       order: 2; 
+    }
+}
+.ord-pic{
+    @media only screen and (max-width: $tablet_width) {
+        order: 1; 
+     }
+}
+
+.num-mr{
+    margin-right: 17px;
+}
+.resptmt{
+    @media only screen and (max-width: $tablet_width) {
+        margin-top: 40px; 
+    }
+}
+.resptmb{
+    @media only screen and (max-width: $tablet_width) {
+        margin-bottom: 40px; 
+    }
+}
+.respmb{
+    @media only screen and (max-width: $mobile_width) {
+        margin-bottom: 40px; 
+    }
+}
+
+
+

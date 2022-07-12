@@ -1,0 +1,76 @@
+html, body {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body{
+  background-color: $white;
+  font-family: $ffb;
+  letter-spacing: 0.8px;
+  color: $dark-green;
+}
+
+h1{
+  font-size: 64px;
+}
+
+h2{
+  font-size: 48px;
+  font-weight: $bold;
+  color: $dark-green; 
+  @media only screen and (max-width: $tablet_width) {
+    font-size: 30px;
+ }
+ @media only screen and (max-width: $mobile_width) {
+  font-size: 27px;
+}
+}
+h3{
+  font-size: 26px;
+  font-weight: $bold;
+  @media only screen and (max-width: $tablet_width) {
+    font-size: 24.5px;
+ }
+ @media only screen and (max-width: $mobile_width) {
+  font-size: 22.5px;
+}
+}
+h4{
+  font-size: 20px;
+  @media only screen and (max-width: $tablet_width) {
+    font-size: 18.5px;
+ }
+ @media only screen and (max-width: $mobile_width) {
+  font-size: 17.5px;
+}
+}
+
+p{
+  font-family: $ffb;
+  font-size: 18px;
+  // color: $black;
+  @media only screen and (max-width: $tablet_width) {
+    font-size: 14.5px;
+ }
+ @media only screen and (max-width: $mobile_width) {
+  font-size: 13.3px;
+}
+}
+
+label{
+  font-size: 12px;
+  // color: $grey;
+}
+
+input{
+  font-size: 14px;
+  margin: 0;
+  // color: $black;
+}
+
+a{
+  color: $dark-green;
+  text-decoration: none !important;
+  // font-size: 16px;
+}
+

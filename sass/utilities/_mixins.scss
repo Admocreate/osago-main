@@ -1,0 +1,30 @@
+@mixin media($res) {
+    @if mobile==$res {
+        @media only screen and (max-width: $mobile_width) {
+            @content;
+        }
+    }
+
+    @if tablet==$res {
+        @media only screen and (max-width: $tablet_width) {
+            @content;
+        }
+    }
+
+    @if desktop==$res {
+        @media only screen and (max-width: $desktop_width) {
+            @content;
+        }
+    }
+
+    @if wide==$res {
+        @media only screen and (max-width: $wide_width) {
+            @content;
+        }
+    }
+}
+
+$wide_width: 1300px;
+$desktop_width: 992px;
+$tablet_width:  767px;
+$mobile_width: 576px;

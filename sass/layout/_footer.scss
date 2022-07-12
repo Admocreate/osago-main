@@ -1,0 +1,77 @@
+footer {
+  background: #FAFAFA;
+
+  .main-footer{
+    padding: 80px 0 40px;
+  }
+
+  .bottom-footer{
+    padding: 10px 0;
+    background: #eee;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  p{
+    margin-bottom: 6px;
+  }
+
+  .playstore{
+    height: 60px;
+    margin-top: 12px;
+  }
+
+  .pad-bottom {
+    @media only screen and (max-width: $mobile_width) {
+      padding-bottom: 50px;
+    }
+  }
+
+  .foot-head {
+    font-weight: 600;
+    color: $dark-green;
+    font-size: 16px;
+    line-height: 0;
+    margin-bottom: 20px;
+  }
+
+  p,
+  a {
+    color: $dark-green;
+    font-size: 14px;
+
+    &:hover {
+      color: $dark-green;
+    }
+  }
+
+  .recuit-txt {
+    color: #028093 !important;
+  }
+
+  //@media only screen and (max-width: $mobile_width) {
+  //  &.desk-footer {
+  //    display: none;
+  //  }
+  //}
+  //
+  //@media only screen and (min-width: $mobile_width) {
+  //  &.mob-footer {
+  //    display: none;
+  //  }
+  //}
+
+}
+
+.card {
+  padding: 15px;
+  text-align: center;
+  border: none;
+  margin-bottom: 35px;
+
+  .card-title {
+    font-weight: $bold;
+    color: $dark-green;
+    padding: 15px 0 5px;
+  }
+}

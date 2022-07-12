@@ -1,0 +1,24 @@
+.btn {
+    font-size: 18px;
+    font-weight: $bold;
+    color: $dark-green;
+    height: 60px;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 4px;
+     a {
+         color: $dark-green;
+     }
+}
+
+// banner buttons 
+.btn-green {
+    background-color: $main-green;
+}
+
+.btn-yellow {
+    background-color: $main-yellow;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 60px; 
+}
